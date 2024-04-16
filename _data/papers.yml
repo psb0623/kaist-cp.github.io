@@ -12,6 +12,8 @@
     "gc",
   ]
   website: /gc
+  doi: 10.1145/3656383
+  copy_local: https://drive.google.com/file/d/1CsFFEPEovU2z--Tf9sYo6RlKEBiyaN_z/view?usp=sharing
 
   abstract:
     "Reclamation schemes for concurrent data structures tackle the challenge of
