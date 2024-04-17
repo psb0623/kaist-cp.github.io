@@ -12,8 +12,6 @@
     "gc",
   ]
   website: /gc
-  doi: 10.1145/3656383
-  copy_local: https://drive.google.com/file/d/1CsFFEPEovU2z--Tf9sYo6RlKEBiyaN_z/view?usp=sharing
 
   abstract:
     "Reclamation schemes for concurrent data structures tackle the challenge of
@@ -51,6 +49,8 @@
     "gc",
   ]
   website: /gc
+  doi: 10.1145/3656383
+  copy_local: https://drive.google.com/file/d/1CsFFEPEovU2z--Tf9sYo6RlKEBiyaN_z/view?usp=sharing
 
   abstract:
     "Memory management for optimistic concurrency in unmanaged programming
@@ -94,24 +94,24 @@
   status: "to appear"
 
   abstract:
-    "Linearizability is the de facto standard for correctness of concurrent 
-    objects—it essentially says that all the object's operations behave as if 
-    they were atomic. There have been a number of recent advances in developing 
-    increasingly strong linearizability specifications for relaxed memory 
-    consistency (RMC), but scalable <em>proof methods</em> for these specifications 
-    do not exist due to the challenges arising from out-of-order executions 
-    (requiring event reordering) and selected synchronization (requiring tracking 
+    "Linearizability is the de facto standard for correctness of concurrent
+    objects—it essentially says that all the object's operations behave as if
+    they were atomic. There have been a number of recent advances in developing
+    increasingly strong linearizability specifications for relaxed memory
+    consistency (RMC), but scalable <em>proof methods</em> for these specifications
+    do not exist due to the challenges arising from out-of-order executions
+    (requiring event reordering) and selected synchronization (requiring tracking
     of view transfers).
     <br />
     We propose a proof recipe for the <em>linearizable history specifications</em>
-    by Dang et al. in the Iris-based iRC11 concurrent separation logic in Coq. 
+    by Dang et al. in the Iris-based iRC11 concurrent separation logic in Coq.
     Key to our proof recipe is the notion of <em>object modification order</em> (OMO),
-    which generalizes the modification order of the C11 memory model to an object-local 
-    setting. Using OMO we minimize the conditions that need to be proved for event 
+    which generalizes the modification order of the C11 memory model to an object-local
+    setting. Using OMO we minimize the conditions that need to be proved for event
     reordering. To enable proof reuse for concurrent libraries that are built on
-    top of others, OMO provides the novel notion of a <em>commit-with relation</em> 
-    that connects the linearization points of the lower and upper libraries. 
-    Using our recipe, we verify the linearizability of the Michael–Scott queue, 
+    top of others, OMO provides the novel notion of a <em>commit-with relation</em>
+    that connects the linearization points of the lower and upper libraries.
+    Using our recipe, we verify the linearizability of the Michael–Scott queue,
     the elimination stack, and Folly’s MPMC queue in RMC for the first time; and verify
     stronger specifications of a spinlock and atomic reference counting in RMC than prior work."
 
